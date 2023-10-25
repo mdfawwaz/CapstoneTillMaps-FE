@@ -1,0 +1,58 @@
+/* Add this CSS to your stylesheet */
+.navbar {
+    background-color: #40008a; /* Navbar background color */
+    color: #fff; /* Text color */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Add spacing between user info and other links */
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px; /* Add spacing between avatar and username */
+  }
+  
+/* Add this CSS to your stylesheet */
+button, a {
+    margin-left: 20px;
+    padding: 10px 20px; /* Add padding to the buttons and links */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #46005b; /* Button and link background color */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button, a:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    color: #fff; /* Maintain white text color on hover */
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  

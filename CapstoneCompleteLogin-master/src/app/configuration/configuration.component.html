@@ -1,0 +1,31 @@
+<div class="configuration-container">
+    <h3>Configuration Page</h3>
+  
+    <!-- Dropdown to select locations -->
+    <label for="locations">Select Location:</label>
+    <select id="locations" [(ngModel)]="selectedLocation">
+      <option *ngFor="let location of locations" [value]="location.id">{{ location.name }}</option>
+    </select>
+  
+    <!-- Dropdown to select products -->
+    <label for="products">Select Product:</label>
+    <select id="products" [(ngModel)]="selectedProduct">
+      <option *ngFor="let product of products" [value]="product.id">{{ product.name }}</option>
+    </select>
+  
+    <!-- Enable button -->
+    <button (click)="enableProduct()">Enable</button>
+  
+    <!-- Display product features and parameters -->
+    <div *ngIf="productEnabled">
+      <h4>Product Details</h4>
+      <p>Product Name: {{ selectedProduct }}</p>
+      <p>Location: {{ selectedLocation }}</p>
+      
+      <!-- Add more fields for product details, features, and parameters here -->
+    </div>
+  
+    <!-- Button to save configuration -->
+    <button (click)="saveConfiguration()">Save Configuration</button>
+  </div>
+  

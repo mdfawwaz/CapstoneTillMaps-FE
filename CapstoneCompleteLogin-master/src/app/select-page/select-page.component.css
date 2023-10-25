@@ -1,0 +1,175 @@
+/* Add this CSS to your stylesheet */
+body {
+  background-color: #f0f0f0; /* Light Gray Background */
+  font-family: Arial, sans-serif; /* Use a common font family */
+}
+
+.container {
+  padding: 20px;
+  background-color: #fff; /* White Container Background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.container:hover {
+  background-color: #f5f5f5; /* Slightly lighter background on hover */
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-item {
+  flex: 0 0 calc(50% - 20px);
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure card contents don't overflow */
+}
+
+.tile {
+  border: 2px solid #eee;
+  padding: 20px;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.tile-title {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 3px 9px;
+  margin: 0 0 10px 0; /* Add margin to create space below the title */
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  border:5px solid #000000;
+  border-radius: 5px;
+}
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Times New Roman';
+  font-size:20px;
+  background-color: #a0c5cf;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-table th {
+  background-color: #015100; 
+  color: #fff;
+}
+
+.custom-table th, .custom-table td:last-child {
+  width: 20%; /* Adjust the width of the Actions column */
+}
+
+.custom-table button {
+  margin: 5px;
+}
+.submit-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-details {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #540061;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-details:hover {
+  background-color: #0056b3; 
+}
+
+.flex-item.submit-button {
+  flex-basis: 50%; 
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+button.submit-details,
+button[routerLink="/location"] {
+  width: 50%; /* Set to 100% width */
+  padding: 10px 0; /* Add vertical padding for better spacing */
+  text-align:center;
+}
+
+button.submit-details {
+  background-color: #350059; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.submit-details:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for the "Go to Product Selection" button */
+button[routerLink="/location"] {
+  background-color: #a70000; /* Green background color */
+  color: #fff; /* White text color */
+  border: none;
+  text-align:center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[routerLink="/location"]:hover {
+  background-color: #2BAE2B; /* Darker green on hover */
+}
+/* Add this CSS to your stylesheet */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.button-item {
+  width: 50%; /* Set the width to 50% */
+  text-align: center; /* Center the text inside the button */
+}
+
+button {
+  padding: 10px 20px; /* Add padding to the buttons */
+  background-color: #007BFF; /* Blue background color */
+  color: #fff; /* Whrgb(59, 0, 75)t color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

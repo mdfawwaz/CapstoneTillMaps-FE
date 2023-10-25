@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Tile</title>
+</head>
+<body>
+    <div class="product-tiles">
+        <div class="product-tile" *ngFor="let product of products" (click)="selectProduct(product)">
+            <div class="product-image">
+                <img [src]="product.imageURL" alt="{{ product.name }}">
+            </div>
+            <div class="product-name">
+                <h3>Product Name: {{ product.name }}</h3>
+            </div>
+            <div class="product-details">
+                <p>Product Details: {{ product.details }}</p>
+                <p>Max Products Per Location: {{ product.maxProductsPerLocation }}</p>
+                <p>Price: {{ product.price }}</p>
+            </div>
+            <div class="select-container">
+                <select>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+            <br />
+            <br />
+            <div class="button-container">
+                <button class="details" (click)="openDetailsDialog(product)">Details</button>
+
+
+                <button (click)="goToConfigurationPage()">Select</button>
+
+            </div>
+        </div>
+    </div>
+
+       <!-- <div *ngIf="productDetails">
+        <h2>Product Details</h2>
+        <p>Name: {{ productDetails.name }}</p>
+        <p>Description: {{ productDetails.description }}</p>
+        <!-- Add more product details fields as needed 
+      </div>
+      
+      <div *ngIf="productFeatures">
+        <h2>Product Features</h2>
+        <ul>
+          <li *ngFor="let feature of productFeatures">{{ feature.name }}</li>
+        </ul>
+     Add more product features fields as needed 
+      </div>-->
+      
+</body>
+</html>
